@@ -1,15 +1,11 @@
-﻿using System;
+﻿using Spire.Pdf;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Spire.Pdf;
 
 namespace GetImg
 {
@@ -23,7 +19,7 @@ namespace GetImg
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (listPdfDir .Count >0 && textBox4.Text!="")
+            if (listPdfDir.Count > 0 && textBox4.Text != "")
             {
                 foreach (string strPath in listPdfDir)
                 {
@@ -92,7 +88,7 @@ namespace GetImg
             System.Diagnostics.Process.Start(textBox4.Text);//打开重命名后的路径进行查看
         }
 
-        ArrayList listPdfDir = new ArrayList(),listPdf=new ArrayList();
+        ArrayList listPdfDir = new ArrayList(), listPdf = new ArrayList();
 
         private void button6_Click(object sender, EventArgs e)
         {
